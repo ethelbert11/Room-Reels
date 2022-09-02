@@ -9,9 +9,8 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 /**
- *
- * @author UpToDate
  */
+
 public class Project extends Application {
 
     @Override

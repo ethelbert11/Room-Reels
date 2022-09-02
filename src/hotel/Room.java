@@ -99,9 +99,7 @@ public class Room {
         return "Room{" + "roomID=" + roomID + ", room_Type=" + room_Type + ", room_capacity=" + room_capacity + ", Check_In_Date=" + Check_In_Date + ", Check_Out_Date=" + Check_Out_Date + ", isEmpty=" + isEmpty + '}';
     }
 
-    /*==========================================================================
-     ------------------------((((DataBase)))))----------------------------------
-    ==========================================================================*/
+
     public static void RoomBooking(Guest guest, Room room, int RoomId) {
         System.out.println("in roombooking() ...");
         CheckIn(guest, room, RoomId);

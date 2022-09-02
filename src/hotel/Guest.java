@@ -170,9 +170,9 @@ public class Guest implements RoomFees {
         return fees;
     }
 
-    /*==========================================================================
-     ------------------------((((DataBase)))))----------------------------------
-    ==========================================================================*/
+
+
+
     public static void SaveGuest(Guest guest) {
         // create session factory
         SessionFactory factory = new Configuration()

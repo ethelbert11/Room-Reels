@@ -44,9 +44,8 @@ import project.Paths;
 
 /**
  * FXML Controller class
- *
- * @author UpToDate
  */
+
 public class CheckInController implements Initializable {
 
     @FXML
@@ -127,16 +126,15 @@ public class CheckInController implements Initializable {
 
     /**
      * Initializes the controller class.
-     *
-     * @param url
-     * @param rb
      */
     @Override
 
     public void initialize(URL url, ResourceBundle rb) {
         usernameLabel.setText(login.LoginController.user.getUsername());
         CheckInDatePicker.setValue(LocalDate.now());
+
         // ========= Validators =========
+
         NumberValidator numberValidator = new NumberValidator("This field must be numbers only.");
 //
         CVCcodeField.getValidators().add(numberValidator);

@@ -28,8 +28,6 @@ import javafx.stage.Stage;
 
 /**
  * FXML Controller class
- *
- * @author UpToDate
  */
 public class RoomBookingController implements Initializable {
 
@@ -96,9 +94,6 @@ public class RoomBookingController implements Initializable {
 
     /**
      * Initializes the controller class.
-     *
-     * @param url
-     * @param rb
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {

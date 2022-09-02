@@ -1,11 +1,4 @@
--- phpMyAdmin SQL Dump
--- version 5.2.0
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Sep 01, 2022 at 01:27 PM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 7.4.29
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -90,7 +83,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`user_name`, `user_pass`, `is_admin`) VALUES
-('deen', 1999, 0),
+('alimo', 1999, 0),
 ('weezy', 1999, 1);
 
 --

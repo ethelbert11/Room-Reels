@@ -16,11 +16,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
-/**
- * FXML Controller class
- *
- * @author UpToDate
- */
+
 public class CancelBookingController implements Initializable {
 
     @FXML
@@ -45,9 +41,6 @@ public class CancelBookingController implements Initializable {
 
     /**
      * Initializes the controller class.
-     *
-     * @param url
-     * @param rb
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {

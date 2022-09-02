@@ -28,8 +28,6 @@ import project.switchScreen;
 
 /**
  * FXML Controller class
- *
- * @author UpToDate
  */
 public class HomePageController implements Initializable {
 
@@ -62,9 +60,6 @@ public class HomePageController implements Initializable {
 
     /**
      * Initializes the controller class.
-     *
-     * @param url
-     * @param rb
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -94,17 +89,23 @@ public class HomePageController implements Initializable {
         System.out.println("Log-Out label clicked");
         try {
             //Load new FXML and assign it to scene
+
             Parent root = FXMLLoader.load(getClass().getResource(Paths.LOGINVIEW));
             //create empty new stage
+
             Stage window2 = new Stage();
             //set layout properties
+
             JFXDecorator decorator = new JFXDecorator(window2, root, false, false, true);
             //Create new scene and add new layout in it
+
             Scene scene = new Scene(decorator);
-            // add css file to the scene 
+            // add css file to the scene
+
             String uri = getClass().getResource("dectaorStyle.css").toExternalForm();
             scene.getStylesheets().add(uri);
             //stage properties
+
             int width = 690, height = 620;
             window2.setScene(scene);
             window2.setMaxHeight(height);
@@ -114,9 +115,13 @@ public class HomePageController implements Initializable {
             Image icon = new Image(getClass().getResourceAsStream("/img/login_icon.png"));
             window2.getIcons().add(icon);
             window2.show();
+
             //set foucus in the window not in close and maximize button
+
             root.requestFocus();
+
             //close the old stage
+
             ((Stage) ((Node) event.getSource()).getScene().getWindow()).close();
 
         } catch (Exception ex) {
@@ -200,9 +205,12 @@ public class HomePageController implements Initializable {
         System.out.println("Check out button clicked");
 
         try {
-            //load FXML File in Parent 
+            //load FXML File in Parent
+
             Parent root = FXMLLoader.load(getClass().getResource(Paths.CHECKOUTVIEW));
+
             // get the stage to change the title
+
             window = (Stage) ((Node) event.getSource()).getScene().getWindow();
             window.setTitle("Check out");
             //change the content in the decorator with the new root

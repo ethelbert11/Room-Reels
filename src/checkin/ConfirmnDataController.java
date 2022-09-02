@@ -18,9 +18,8 @@ import project.DataBase;
 
 /**
  * FXML Controller class
- *
- * @author UpToDate
  */
+
 public class ConfirmnDataController implements Initializable {
 
     @FXML

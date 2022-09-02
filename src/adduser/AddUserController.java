@@ -24,8 +24,6 @@ import project.User;
 
 /**
  * FXML Controller class
- *
- * @author UpToDate
  */
 public class AddUserController implements Initializable {
 
@@ -116,7 +114,9 @@ public class AddUserController implements Initializable {
             Parent root = FXMLLoader.load(getClass().getResource(Paths.USERSVIEW));
             decorator1.setContent(root);
             decorator1.setTitle("Users");
+
             //set foucus in the window not in close and maximize button
+
             root.requestFocus();
         } catch (Exception ex) {
             System.out.println("Error load Users FXML !");

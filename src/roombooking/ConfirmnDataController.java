@@ -18,8 +18,6 @@ import javafx.stage.Stage;
 
 /**
  * FXML Controller class
- *
- * @author UpToDate
  */
 public class ConfirmnDataController implements Initializable {
 
@@ -69,10 +67,8 @@ public class ConfirmnDataController implements Initializable {
 
     /**
      * Initializes the controller class.
-     *
-     * @param url
-     * @param rb
      */
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         Reservation reservation = CheckInController.reservation;
